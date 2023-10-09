@@ -1,6 +1,6 @@
 package com.milliondollawinners;
 
-public class Time {
+public class Time {  
     //instance variables
     int hour;
     int minute;
