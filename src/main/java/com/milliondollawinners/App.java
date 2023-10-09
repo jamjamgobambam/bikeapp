@@ -14,5 +14,14 @@ public class App {
 
         kensBirthday.setMonth(2);
         System.out.println(kensBirthday);
+
+        Location austin = new Location();
+        System.out.println(austin);
+
+        Location snohomish = new Location(47.919167, -122.09111, "Snohomish");
+        System.out.println(snohomish.getLat());
+        System.out.println(snohomish.getLon());
+
+        System.out.println(snohomish);
     }
 }
