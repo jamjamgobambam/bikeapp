@@ -3,27 +3,27 @@ package com.milliondollawinners;
 public class Route {
     private Location startLoc;
     private Location endLoc;
-    //private Time startTime;
     //Distance in miles
     private double distance;
-    //Elevation gain in feet
+    //Elevation gain/loss in feet
     private int elevationGain;
+    private int elevationLoss;
 
 
     public Route() {
         startLoc = new Location();
         endLoc = new Location();
-        //startTime = new Time();
         distance = 1.0;
         elevationGain = 0;
+        elevationLoss = 0;
     }
 
-    public Route(Location startLoc, Location endLoc, double distance, int elevationGain) {
+    public Route(Location startLoc, Location endLoc, double distance, int elevationGain, int elevationLoss) {
         this.startLoc = startLoc;
         this.endLoc = endLoc;
-        //this.startTime = startTime;
         this.distance = distance;
         this.elevationGain = elevationGain;
+        this.elevationLoss = elevationLoss;
     }
 
     public void setStartLoc(Location startLoc) {
@@ -43,8 +43,6 @@ public class Route {
         endLoc.setLat(lat);
         endLoc.setLon(lon);
     }
-
-    
     
     public double getDistance() {
         return distance;
@@ -53,6 +51,12 @@ public class Route {
     public int getElevationGain() {
         return elevationGain;
     }
+
+    public int getElevationLoss() {
+        return elevationLoss;
+    }
+
+
 
 
 }
