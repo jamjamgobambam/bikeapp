@@ -1,14 +1,12 @@
 package com.milliondollawinners;
 
 public class Date {
-    
-    // instance variables
+    //instance variables
     private int month;
     private int day;
     private int year;
 
-    // constructors
-    // no-argument constructor AND/OR parameterized constructors
+    // constructor(s)
     public Date() {
         this(1, 1, 1900);
     }
@@ -19,20 +17,39 @@ public class Date {
         this.year = year;
     }
 
-    // methods
+    //methods
+    public String toString() {
+        return month + "/" + day + "/" + year;
+    }
 
-    // accessor methods
+    //accessors(getters)
     public int getMonth() {
         return month;
     }
 
-    // mutator methods
+    public int getDay() {
+        return day;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    //mutators(setters)
     public void setMonth(int month) {
-        this.month = month;
+        if (month >= 1 && month <= 12) {
+            this.month = month;
+        }
     }
 
-    public String toString() {
-        return month + "-" + day + "-" + year;
+    public void setDay(int day) {
+        if (day >= 1 && day <= 31) {
+            this.day = day;
+        }
     }
 
+    public void setYear(int year) {
+        this.year = year;
+    }
+    
 }

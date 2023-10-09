@@ -14,5 +14,8 @@ public class App {
 
         kensBirthday.setMonth(2);
         System.out.println(kensBirthday);
+        kensBirthday.setMonth(14);  // should not change month
+        System.out.println(kensBirthday);
+
     }
 }
