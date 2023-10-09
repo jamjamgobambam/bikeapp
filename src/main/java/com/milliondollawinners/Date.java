@@ -10,9 +10,7 @@ public class Date {
     // constructors
     // no-argument constructor AND/OR parameterized constructors
     public Date() {
-        month = 1;
-        day = 1;
-        year = 1900;
+        this(1, 1, 1900);
     }
 
     public Date(int month, int day, int year) {
