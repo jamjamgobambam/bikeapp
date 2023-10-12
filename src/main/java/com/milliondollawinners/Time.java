@@ -2,8 +2,8 @@ package com.milliondollawinners;
 
 public class Time {
     //instance variables
-    int hour;
-    int minute;
+    private int hour;
+    private int minute;
 
     // constructors
     public Time() {
