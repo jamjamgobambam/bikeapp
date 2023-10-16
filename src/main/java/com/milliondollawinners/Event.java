@@ -12,6 +12,7 @@ public class Event {
     // constructor
     public Event() {
         name = "placeholder";
+        date = null;
     }
 
     // parameterized constructor
