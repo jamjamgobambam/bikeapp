@@ -26,5 +26,8 @@ public class App {
         System.out.println(snohomish.getLon());
 
         System.out.println(snohomish);
+
+        Weather temp = new Weather();
+        System.out.println(temp);
     }
 }
