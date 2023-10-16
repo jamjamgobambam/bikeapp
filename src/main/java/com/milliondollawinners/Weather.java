@@ -35,9 +35,9 @@ public class Weather {
         return temp;
     }
 
-    public int getGoodTemp(){
-        return 
-    }
+    // public int getGoodTemp(){
+    //     return 
+    // }
 
     // mutators (or setters)
     public void setTemp(int temp) {
