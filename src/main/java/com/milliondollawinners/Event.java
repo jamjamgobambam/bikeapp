@@ -1,5 +1,7 @@
 package com.milliondollawinners;
 
+import java.util.ArrayList;
+
 public class Event {
     private String name;
     private Date date;
@@ -10,6 +12,7 @@ public class Event {
     // constructor
     public Event() {
         name = "placeholder";
+        date = null;
     }
 
     // parameterized constructor
