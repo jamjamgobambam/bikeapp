@@ -2,6 +2,7 @@ package com.milliondollawinners;
 
 public class Weather {
     // instance variables
+    // yeah yeah yeah
     private int temp;
     private String condition;
 
