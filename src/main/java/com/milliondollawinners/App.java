@@ -1,18 +1,13 @@
 package com.milliondollawinners;
 
-import java.util.Scanner;
-
 public class App {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Weather weather1 = new Weather();
+        Weather weather2 = new Weather(140, "cloudy");
 
-        Weather temp = new Weather();
-        System.out.println(temp.getTemp());
+        System.out.println(weather1);
+        System.out.println(weather2);
 
-        while (!= temp.getGoodTemp()) {
-            System.out.print("Please enter a new temperature: ");
-            temp.setTemp(in.nextInt());
-            System.out.println(temp.getTemp());
-        }
+        weather1.setTemp();
     }
 }
