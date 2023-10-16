@@ -1,4 +1,4 @@
-package com.exmaple;
+package com.milliondollawinners;
 
 public class Challenges {
 
