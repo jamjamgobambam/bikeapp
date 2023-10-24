@@ -12,6 +12,12 @@ public class Event {
     // constructor
     public Event() {
         name = "placeholder";
+        date = new Date();
+        time = new Time();
+        location = new Location();
+        riders = new ArrayList<String>();
+        organizers = new String[0];
+
     }
 
     // parameterized constructor
@@ -19,6 +25,23 @@ public class Event {
         this.name = name;
         this.date = new Date(month, day, year);
         this.time = new Time(hour, minute);
+        location = new Location();
+        riders = new ArrayList<String>();
+        organizers = new String[0];
+    }
+
+    public Event(ArrayList<String> riders, String[] organizers) {
+        name = "placeholder";
+        date = new Date();
+        time = new Time();
+        location = new Location();
+        this.riders = riders;
+        this.organizers = organizers;
+
+    }
+
+    public ArrayList<String> getRiders() {
+        return riders;
     }
 
     // methods

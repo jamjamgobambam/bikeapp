@@ -1,5 +1,6 @@
 package com.milliondollawinners;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
@@ -27,34 +28,53 @@ public class App {
         // System.out.println(snohomish.getLon());
 
         // System.out.println(snohomish);
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the month of your event (1-12): ");
-        int month = input.nextInt();
-        input.nextLine();
+        // System.out.print("Enter the month of your event (1-12): ");
+        // int month = input.nextInt();
+        // input.nextLine();
 
-        System.out.print("Enter the day of your event (1-31): ");
-        int day = input.nextInt();
-        input.nextLine();
+        // System.out.print("Enter the day of your event (1-31): ");
+        // int day = input.nextInt();
+        // input.nextLine();
 
-        System.out.print("Enter the year of your event (YYYY): ");
-        int year = input.nextInt();
-        input.nextLine();
+        // System.out.print("Enter the year of your event (YYYY): ");
+        // int year = input.nextInt();
+        // input.nextLine();
 
 
-        System.out.print("What time (hour) does your event start (0-23): ");
-        int hour = input.nextInt();
-        input.nextLine();
+        // System.out.print("What time (hour) does your event start (0-23): ");
+        // int hour = input.nextInt();
+        // input.nextLine();
 
-        System.out.print("What time (minute) does your event start (0-59): ");
-        int minute = input.nextInt();
-        input.nextLine();
+        // System.out.print("What time (minute) does your event start (0-59): ");
+        // int minute = input.nextInt();
+        // input.nextLine();
 
-        System.out.print("Enter the name of the event: ");
-        String name = input.nextLine();
+        // System.out.print("Enter the name of the event: ");
+        // String name = input.nextLine();
 
-        Event test = new Event(name, month, day, year, hour, minute);
-        System.out.println(test);
+        // Event test = new Event(name, month, day, year, hour, minute);
+        // System.out.println(test);
+
+        ArrayList<String> riders = new ArrayList<String>();
+        riders.add("Alice");
+        riders.add("Bob");
+        riders.add("Charlie"); 
+
+        String[] organizers = {"Erik", "Jamila"};
+
+        Event test = new Event(riders, organizers);
+        System.out.println(test.getRiders());
+
+        Event csEdCon = new Event("CSEdCon", 11, 1, 2023, 12, 30);
+
+        Calendar testCal = new Calendar();
+        testCal.addEvent(test);
+        testCal.addEvent(csEdCon);
+        System.out.println(testCal);
+
+
 
 
 
